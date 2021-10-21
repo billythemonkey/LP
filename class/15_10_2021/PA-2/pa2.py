@@ -24,15 +24,12 @@ def change_even_to_a(string):
     
     numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     
-    replaced_text= ""
     for s in string:
         for n in numbers:
-            # print(s, type(s))
             if s == str(n) and n % 2 == 0:
-                # print(s, type(s))
-                replaced_text = string.replace(s, 'A')
-    
-    return replaced_text
+                
+                string = string.replace(s, 'A')
+    return string
 
 # Alínea c)
 
@@ -64,9 +61,9 @@ if __name__ == "__main__":
     a = count_vogals(testA)
     print(a)
     
-    testB = "222"
-    a = change_even_to_a(testB)
-    print(a)
+    testB = "1C 02146"
+    b = change_even_to_a(testB)
+    print(b)
     
     testC = "123dufjfj3490"
     c = sum_digits(testC)
