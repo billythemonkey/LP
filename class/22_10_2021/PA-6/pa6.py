@@ -31,7 +31,6 @@ def trapz(f,tuple, omega, theta,a, b, N=50):
 if __name__ == "__main__":
     
     
-    
     print(func(3, (1,2,3)))
     print(trapz(func, (1, 2, 3), 100, 27, 0, math.pi))
  
